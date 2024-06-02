@@ -4,6 +4,8 @@
  - name: create s3 bucket
    s3_bucket:
      name: my-ansible-bucket
+     aws_access_key: "accesskey"
+     aws_secret_key: "secret_access_key"
      state: present
      region:
      versioning: yes
